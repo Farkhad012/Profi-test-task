@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+}
+
+.content {
+  width: 1390px;
+  margin: 0 auto;
+}
+
+/* Шапка сайта */
+
+.header {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 220px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
