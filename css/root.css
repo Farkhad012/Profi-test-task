@@ -1,0 +1,13 @@
+/* Переменные */
+:root {
+  --text-first-color: #fff;
+  --text-secondary-color: #181818;
+  --btn-color: #01a4ac;
+  --btn-secondary-color: #000;
+  --btn-thirst-color: #222222;
+
+  --breakpoint-small: 576px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 992px;
+  --breakpoint-xlarge: 1200px;
+}

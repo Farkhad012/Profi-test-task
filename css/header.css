@@ -1,0 +1,33 @@
+/* Header */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo {
+  width: 220px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-family: Montserrat;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+}
+
+/* Стили для экранов шириной меньше 576px */
+@media screen and (max-width: var(--breakpoint-small)) {}
+
+/* Стили для экранов от 576px до 767px */
+@media screen and (min-width: var(--breakpoint-small)) and (max-width: var(--breakpoint-medium)) {
+  .logo {
+    width: 150px;
+  }
+
+}
+
+/* Стили для экранов от 768px до 991px */
+@media screen and (min-width: var(--breakpoint-medium)) and (max-width: var(--breakpoint-large)) {}
