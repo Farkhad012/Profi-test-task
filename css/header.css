@@ -3,16 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  height: 105px;
 }
 
 .logo {
-  width: 220px;
+  width: 240px;
 }
 
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 41px;
   font-family: Montserrat;
   font-weight: 700;
   /* letter-spacing: 1px; */
@@ -24,7 +24,7 @@
 /* Стили для экранов от 576px до 767px */
 @media screen and (min-width: var(--breakpoint-small)) and (max-width: var(--breakpoint-medium)) {
   .logo {
-    width: 150px;
+    width: 10px;
   }
 
 }

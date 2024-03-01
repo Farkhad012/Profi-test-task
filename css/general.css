@@ -5,7 +5,9 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 1390px;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 1512px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -13,12 +15,13 @@
 .btn {
   /* text-align: center; */
   width: max-content;
-  padding: 10px 30px 10px 30px;
+  padding: 36px 70px 36px 70px;
   height: 40px;
   display: flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 500;
+  font-size: 25px;
 }
 
 .btn_black {
