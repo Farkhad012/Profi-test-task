@@ -1,0 +1,89 @@
+.services {
+  position: relative;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image:linear-gradient(rgba(57, 57, 57, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigfogmarketing_realism_ultra_hd_turquoise_clear_gas_pipes_agai.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: blur(0%); 
+  --webkit-filter: blur(0px);
+  z-index: -1; 
+}
+
+.services__container {
+  padding: 100px 0 170px;  
+}
+
+.services__items {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+
+.services__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  background-color: var(--main-background_color);
+  border-radius: 10px;
+}
+
+.services__description {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.services__price {
+  width: 100%;
+  background-color: var(--text-first-color);
+  padding: 24px 24px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: var(--text-secondary-color);
+}
+
+.services__item .button {
+  width: 100%;
+  background-color: var(--btn-secondary-color);
+  padding: 24px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: var(--text-first-color);
+  display: flex;
+  justify-content: start;
+}
+
+.services__item li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.services__item li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;   height: 16px;
+  background-color: var(--btn-color); 
+  border-radius: 50%; 
+  margin-right: 8px; 
+}

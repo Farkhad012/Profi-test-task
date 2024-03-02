@@ -1,13 +1,17 @@
 /* Переменные */
 :root {
   --text-first-color: #fff;
-  --text-secondary-color: #181818;
+  --text-secondary-color: #000;
+  --main-background_color: #f7f7f7;
   --btn-color: #01a4ac;
-  --btn-secondary-color: #000;
+  --btn-secondary-color: #181818;
   --btn-thirst-color: #222222;
 
-  --breakpoint-small: 576px;
-  --breakpoint-medium: 768px;
-  --breakpoint-large: 992px;
-  --breakpoint-xlarge: 1200px;
+  /* --breakpoint-small: 576px; */
+  /* --breakpoint-medium: 768px; */
+  --breakpoint-mobile: 768px;
+  /* --breakpoint-large: 992px; */
+  --breakpoint-tablet: 992px;
+  /* --breakpoint-xlarge: 1200px; */
+  --breakpoint-desktop: 1200px;
 }

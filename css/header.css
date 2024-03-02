@@ -1,5 +1,6 @@
 /* Header */
 .header__container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,16 +19,29 @@
   /* letter-spacing: 1px; */
 }
 
-/* Стили для экранов шириной меньше 576px */
-@media screen and (max-width: var(--breakpoint-small)) {}
-
-/* Стили для экранов от 576px до 767px */
-@media screen and (min-width: var(--breakpoint-small)) and (max-width: var(--breakpoint-medium)) {
-  .logo {
-    width: 10px;
-  }
-
+.menu li:hover {
+  color: var(--btn-color);
 }
 
-/* Стили для экранов от 768px до 991px */
-@media screen and (min-width: var(--breakpoint-medium)) and (max-width: var(--breakpoint-large)) {}
+/* стили для планшетов */
+@media screen and (max-width: var(--breakpoint-tablet)) {
+  .logo {
+    width: 200px;
+  }
+
+  .menu {
+    display: none;
+    gap: 41px;
+    font-family: Montserrat;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+  }
+}
+
+/* стили для мобильных устройств */
+@media screen and (max-width: var(--breakpoint-mobile)) {
+  .menu {
+    display: none;
+  }
+}
+
