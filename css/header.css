@@ -24,14 +24,14 @@
 }
 
 /* стили для планшетов */
-@media screen and (max-width: var(--breakpoint-tablet)) {
+@media screen and (max-width: 1200px) {
   .logo {
-    width: 200px;
+    width: 220px;
   }
 
   .menu {
-    display: none;
-    gap: 41px;
+    /* display: none; */
+    gap: 24px;
     font-family: Montserrat;
     font-weight: 700;
     /* letter-spacing: 1px; */

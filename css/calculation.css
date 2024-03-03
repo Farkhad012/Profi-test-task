@@ -13,6 +13,14 @@
   padding: 120px 0 120px 0;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .calculation__container {
+    /* width: 80%; */
+    flex-direction: column;
+  }
+}
+
 .calculation_content {
   display: flex;
   flex-direction: column;
@@ -57,6 +65,7 @@ input[type="text"] {
   padding-left: 20px;
   /* background-color: rgb(168, 173, 157); */
 }
+
 
 input[type="checkbox"] {
   height: 30px;
