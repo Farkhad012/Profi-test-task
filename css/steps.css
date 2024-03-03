@@ -1,5 +1,5 @@
 .steps__container {
-  padding: 100px 0;
+  padding: 100px 0 80px;
   margin-bottom: 50px; 
   display: flex;
   flex-direction: column;
