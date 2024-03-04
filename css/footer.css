@@ -23,24 +23,26 @@
 }
 
 .footer__top .logo {
-  width: 252px;
+  width: 220px;
   mix-blend-mode: difference;
   filter: brightness(0) invert(1);
 }
 
 .menu__footer {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -1.5px;
-  gap: 44px;
-  align-items: flex-end;
+  gap: 36px;
+  /* align-items: flex-end; */
   font-weight: 600;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .menu__footer {
+    width: 100%;
     font-size: 16px;
     justify-content: space-between;
+    align-items: center;
   }
   
 }
@@ -60,6 +62,7 @@
     margin-top: 24px;
     gap: 24px;
     flex-direction: column-reverse;
+    padding: 0;
   }
 }
 
@@ -76,7 +79,7 @@
 
 .contacts {
   display: flex;
-  gap: 122px;
+  gap: 74px;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -84,8 +87,10 @@
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .contacts {
+    width: 100%;
     display: flex;
-    gap: 90px;
+    gap: 0;
+    justify-content: space-between;
     font-weight: normal;
     line-height: 1.2;
   }

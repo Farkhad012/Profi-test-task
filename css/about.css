@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.about .container {
+.about.container {
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 138, 145, 0.5) 80%, rgb(0, 0, 0, 0.7) 100%);
 }
@@ -26,12 +26,11 @@
 @media screen and (max-width: 1200px) {
   .about__container {
     padding: 150px 0 150px 0;
-    gap: 150px;
+    gap: 240px;
   }
 }
 
 .about__about {
-  margin-bottom: 55px;
   display: flex;
   flex-direction: column;
   gap: 57px;
@@ -44,7 +43,7 @@
 .about__steps {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
   font-size: 26px;
   font-weight: 500;
   letter-spacing: -1.3px;
@@ -58,15 +57,16 @@
 
 .about__places {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   color: var(--text-first-color);
+  margin-right: 20px;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .about__places {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
   }
 }
@@ -78,6 +78,13 @@
 .about__places p {
   font-size: 12px;
   line-height: 2.2;
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .about__places p {
+    font-size: 12px;
+  }
 }
 
 .about__places-item {

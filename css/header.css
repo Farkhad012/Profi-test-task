@@ -8,15 +8,14 @@
 }
 
 .logo {
-  width: 240px;
+  width: 232px;
 }
 
 .menu {
   display: flex;
-  gap: 41px;
+  gap: 36px;
   font-family: Montserrat;
   font-weight: 700;
-  /* letter-spacing: 1px; */
 }
 
 .menu li:hover {
@@ -26,15 +25,14 @@
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .logo {
-    width: 220px;
+    width: 200px;
   }
 
   .menu {
-    /* display: none; */
-    gap: 24px;
+    font-size: 13px;
+    gap: 16px;
     font-family: Montserrat;
     font-weight: 700;
-    /* letter-spacing: 1px; */
   }
 }
 

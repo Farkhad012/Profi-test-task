@@ -9,13 +9,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image:linear-gradient(rgba(57, 57, 57, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigfogmarketing_realism_ultra_hd_turquoise_clear_gas_pipes_agai.png);
+  background-image: linear-gradient(rgba(57, 57, 57, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigfogmarketing_realism_ultra_hd_turquoise_clear_gas_pipes_agai.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  filter: blur(0%); 
+  filter: blur(0%);
   --webkit-filter: blur(0px);
-  z-index: -20; 
+  z-index: -20;
 }
 
 .services::after {
@@ -25,17 +25,17 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image:linear-gradient(rgba(57, 57, 57, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigfogmarketing_realism_ultra_hd_turquoise_clear_gas_pipes_agai.png);
+  background-image: linear-gradient(rgba(57, 57, 57, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigfogmarketing_realism_ultra_hd_turquoise_clear_gas_pipes_agai.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  filter: blur(20px); 
+  filter: blur(20px);
   --webkit-filter: blur(5px);
   background-size: cover;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .services__container {
-  padding: 100px 0 170px;  
+  padding: 100px 0 170px;
 }
 
 .services__items {
@@ -46,21 +46,46 @@
   gap: 48px;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__items {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-top: 60px;
+  }
+}
+
+
 .services__item {
   width: 100%;
   display: flex;
+  gap: 50px;
+  scroll-snap-align: start;
   flex-direction: column;
-  gap: 40px;
+  justify-content: space-between;
   padding: 40px;
   background-color: var(--main-background_color);
   border-radius: 10px;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__item {
+    min-height: 100%;
+  }
+}
+
 .services__description {
-  align-self: flex-start;
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__description {
+    gap: 30px;
+  }
 }
 
 .services__price {
@@ -92,14 +117,22 @@
   padding-left: 30px;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__item li {
+    font-size: 12px;
+  }
+}
+
 .services__item li::before {
   content: '';
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;   height: 16px;
-  background-color: var(--btn-color); 
-  border-radius: 50%; 
-  margin-right: 8px; 
+  width: 16px;
+  height: 16px;
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  margin-right: 8px;
 }
