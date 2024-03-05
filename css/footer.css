@@ -31,8 +31,8 @@
 .menu__footer {
   font-size: 16px;
   letter-spacing: -1.5px;
+  display: flex;
   gap: 36px;
-  /* align-items: flex-end; */
   font-weight: 600;
 }
 
@@ -43,8 +43,17 @@
     font-size: 16px;
     justify-content: space-between;
     align-items: center;
-  }
-  
+  }  
+}
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .menu__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+  }  
 }
 
 .footer__bottom {
@@ -93,6 +102,20 @@
     justify-content: space-between;
     font-weight: normal;
     line-height: 1.2;
+  }
+
+  .contacts__item {
+    min-width: max-content;
+  }
+}
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
   }
 
   .contacts__item {

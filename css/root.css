@@ -9,9 +9,9 @@
 
   /* --breakpoint-small: 576px; */
   /* --breakpoint-medium: 768px; */
-  --breakpoint-mobile: 768px;
+  --breakpoint-mobile: 320px;
   /* --breakpoint-large: 992px; */
-  --breakpoint-tablet: 992px;
+  --breakpoint-tablet: 768px;
   /* --breakpoint-xlarge: 1200px; */
   --breakpoint-desktop: 1200px;
 }

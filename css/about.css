@@ -29,6 +29,12 @@
     gap: 240px;
   }
 }
+@media screen and (max-width: 768px) {
+  .about__container {
+    padding: 50px 0 50px 0;
+    gap: 240px;
+  }
+}
 
 .about__about {
   display: flex;
@@ -38,6 +44,12 @@
   font-weight: 500;
   letter-spacing: -1.3px;
   color: var(--text-first-color);
+}
+
+@media screen and (max-width: 768px) {
+  .about__about {
+    width: 100%;
+  }
 }
 
 .about__steps {
@@ -67,7 +79,13 @@
 @media screen and (max-width: 1200px) {
   .about__places {
     grid-template-columns: repeat(2, 1fr);
-
+  }
+}
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .about__places {
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 100%; */
   }
 }
 

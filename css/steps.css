@@ -9,11 +9,18 @@
 .steps__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-
   grid-row-gap: 40px;
   grid-column-gap: 80px;
 }
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .steps__content {
+    grid-template-columns: 1fr;
+
+  }
+}
+
 
 .steps__item {
   padding-right: 10px;
@@ -41,6 +48,14 @@
   .steps__order {
     width: 80px;
     height: 80px;
+    font-size: 24px;
+  }
+}
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .steps__order {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -58,6 +73,12 @@
 @media screen and (max-width: 1200px) {
   .steps__item h4 {
     height: auto;
+  }
+}
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .steps__item h4 {
+    font-size: 18px;
   }
 }
 

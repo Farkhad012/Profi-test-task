@@ -38,26 +38,47 @@
   padding: 100px 0 170px;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__container {
+    padding: 50px 0 50px;
+    height: 100vh;
+  }
+}
+
 .services__items {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 48px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* Для Firefox */
+  -ms-overflow-style: none;
+  /* Для Internet Explorer и Edge */
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .services__items {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     margin-top: 60px;
+  }
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .services__items {
+    margin-top: 60px;
+    gap: 24px;
+    padding: 0 20px;
   }
 }
 
 
 .services__item {
-  width: 100%;
+  width: 440px;
   display: flex;
   gap: 50px;
   scroll-snap-align: start;
@@ -66,12 +87,36 @@
   padding: 40px;
   background-color: var(--main-background_color);
   border-radius: 10px;
+
+  scroll-snap-align: center;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .services__item {
     min-height: 100%;
+    padding: 30px;
+  }
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .services__item {
+    padding: 20px;
+    width: 100%;
+    gap: 30px;
+  }
+}
+
+.services__title {
+  display: inline-block;
+  width: 360px;
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .services__title {
+    width: 272px;
   }
 }
 
@@ -97,6 +142,7 @@
   font-weight: 600;
   letter-spacing: -1.5px;
   color: var(--text-secondary-color);
+  justify-self: flex-end;
 }
 
 .services__item .button {

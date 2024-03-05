@@ -11,13 +11,20 @@ html {
 .wrapper {
   margin: 0 auto;
   padding: 0 8px 0 8px;
-  max-width: 1465px;  
+  max-width: 1465px;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .wrapper {
     padding: 0 12px 0 12px;
+  }
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 4px 0 4px;
   }
 }
 
@@ -34,6 +41,15 @@ html {
   font-weight: 700;
   font-size: 24px;
   transition: 0.3s;
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .btn {
+    padding: 20px 60px;
+    font-size: 16px;
+
+  }
 }
 
 .btn__black {
@@ -82,6 +98,22 @@ h1 {
     width: 700px;
   }
 }
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+    color: var(--btn-secondary-color);
+    width: 700px;
+  }
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    width: 300px;
+  }
+}
 
 h2 {
   font-size: 36px;
@@ -91,6 +123,14 @@ h2 {
   width: 700px;
   color: var(--text-secondary-color);
   text-transform: uppercase;
+}
+
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    width: 100%;
+  }
 }
 
 h3 {
@@ -111,8 +151,14 @@ h3 {
     font-size: 20px;
   }
 }
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 18px;
+  }
+}
 
-h4 {  
+h4 {
   font-weight: 700;
   font-size: 22px;
   white-space: nowrap;
@@ -123,6 +169,12 @@ h4 {
 @media screen and (max-width: 1200px) {
   h4 {
     font-size: 24px;
+  }
+}
+/* стили для планшетов */
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 20px;
   }
 }
 
