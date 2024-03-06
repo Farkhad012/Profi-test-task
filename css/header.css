@@ -41,10 +41,9 @@
   font-weight: 700;
 }
 
-.menu li:hover {
+.menu__header li:hover {
   color: var(--btn-color);
 }
-
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
@@ -59,7 +58,8 @@
   .menu__header {
     /* display: none; */
     position: absolute;
-    top: 0;
+    top: -1000px;
+    left: 0;
     height: 50vh;
     text-align: right;
     opacity: 90%;
@@ -76,4 +76,58 @@
   .menu li:hover {
     color: var(--btn-thirst-color);
   }
+
+  .header__menu.open .menu__header {
+    width: 100%;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.burger__menu-icon {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  /* background-color: rgba(242, 190, 34, 0.1); */
+}
+
+@media screen and (max-width: 768px) {
+  .burger__menu-icon {
+    display: block;
+  }
+}
+
+.burger__menu-icon span {
+  position: absolute;
+  height: 4px;
+  width: 24px;
+  background: var(--btn-secondary-color);
+  border-radius: 50px;
+  z-index: 99;
+  right: 4px;
+  top: 13px;
+  transition: transform .5s, opacity .5s;
+}
+
+
+.burger__menu-icon span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.burger__menu-icon span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header__menu.open .burger__menu-icon span:nth-child(1) {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.header__menu.open .burger__menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu.open .burger__menu-icon span:nth-child(3) {
+  transform: translateY(0px) rotate(45deg);
 }

@@ -43,18 +43,24 @@
     font-size: 16px;
     justify-content: space-between;
     align-items: center;
-  }  
+  }
+
+  .menu__footer .menu__item {
+    text-align: center;
+  }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .menu__footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: flex-start;    
+  }
 
-  }  
 }
+
 
 .footer__bottom {
   margin-top: 10px;
@@ -88,26 +94,37 @@
 
 .contacts {
   display: flex;
-  gap: 74px;
   font-weight: normal;
   line-height: 1.2;
+  gap: 72px;
+}
+
+.contacts span {
+  font-weight: 600;
+}
+
+.contacts li {
+  max-width: 265px;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .contacts {
     width: 100%;
-    display: flex;
-    gap: 0;
     justify-content: space-between;
     font-weight: normal;
     line-height: 1.2;
   }
 
+  .contacts p {
+    max-width: 265px;
+  }
+
   .contacts__item {
-    min-width: max-content;
+    max-width: max-content;
   }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .contacts {

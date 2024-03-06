@@ -29,6 +29,7 @@
     gap: 240px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .about__container {
     padding: 50px 0 50px 0;
@@ -67,6 +68,10 @@
   margin-right: 5px;
 }
 
+.about__steps {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 .about__places {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -75,12 +80,17 @@
   margin-right: 20px;
 }
 
+.about__places {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .about__places {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .about__places {

@@ -14,19 +14,26 @@
     <!-- шапка сайта -->
     <div class="container">
       <div class="wrapper">
-
         <div class="header__container ">
           <!-- логотип -->
           <a href="#"><img class="logo" src="img/logos/logo_DK_Profi.svg" alt="logo"></a>
-
+          
           <!-- меню сайта -->
-          <ul class="menu menu__header">
-            <li class="menu__item"><a href="#about">О компании</a></li>
-            <li class="menu__item"><a href="#services">Услуги и цены</a></li>
-            <li class="menu__item"><a href="#">Галерея работ</a></li>
-            <li class="menu__item"><a href="#calculation">Калькулятор</a></li>
-            <li class="menu__item"><a href="#footer">Контакты</a></li>
-          </ul>
+          <nav class="header__menu">
+            <ul class="menu menu__header">
+              <li class="menu__item"><a href="#about">О компании</a></li>
+              <li class="menu__item"><a href="#services">Услуги и цены</a></li>
+              <li class="menu__item"><a href="#">Галерея работ</a></li>
+              <li class="menu__item"><a href="#calculation">Калькулятор</a></li>
+              <li class="menu__item"><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- иконка бургер меню -->
+          <div class="burger__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
       </div>
@@ -34,13 +41,12 @@
   </header>
 
   <main class="main">
-
     <!-- Блок about -->
     <div id="about" class="about">
       <div class="container">
         <div class="wrapper">
-
           <div class="about__container">
+            <!-- about top -->
             <div class="about__about">
               <!-- Заголовок -->
               <h1 class="title">Выгодная газификация домов под ключ</h1>
@@ -54,47 +60,46 @@
               <!-- кнопка "Узнать стоимость" -->
               <button class="btn btn__black">Узнать стоимость</button>
             </div>
-
+            <!-- about bottom -->
             <div class="about__places">
               <div class="about__places-item">
                 <h4 class="about__places-title">Частные дома</h4>
-                <p class="about__places-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                  enim
-                  possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates tempore
-                  consequatur,
-                  quasi fugiat quas at minima! Error, officia quod! lorem100
+                <p class="about__places-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla enim possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates
+                  tempore
+                  consequatur,quasi fugiat quas at minima! Error, officia quod! lorem100
                 </p>
               </div>
               <div class="about__places-item">
                 <h4 class="about__places-title">Таунхаус</h4>
-                <p class="about__places-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                  enim
-                  possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates tempore
-                  consequatur,
-                  quasi fugiat quat minima! Error, officia quodas at minima! Error, officia quod!
+                <p class="about__places-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla enim possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates
+                  tempore
+                  consequatur, quasi fugiat quat minima! Error, officia quodas at minima! Error, officia quod!
                 </p>
               </div>
               <div class="about__places-item">
                 <h4 class="about__places-title">Коттеджные поселки</h4>
-                <p class="about__places-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                  enim
-                  possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates tempore
-                  consequatur,
-                  quasi fugiat quas at minima! Error, officia quod!
+                <p class="about__places-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla enim possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates
+                  tempore
+                  consequatur, quasi fugiat quat minima! Error, officia quodas at minima! Error, officia quod!
                 </p>
               </div>
               <div class="about__places-item">
                 <h4 class="about__places-title">Промышленные объекты</h4>
-                <p class="about__places-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                  enim
-                  possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates tempore
-                  consequatur,
-                  quasi fugiat quas at minima! Error, officia quod!
+                <p class="about__places-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla enim possimus corporis cumque rerum optio, omnis corrupti necessitatibus veniam voluptates
+                  tempore
+                  consequatur, quasi fugiat quat minima! Error, officia quodas at minima! Error, officia quod!
                 </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -103,17 +108,17 @@
     <div id="calculation" class="calculation">
       <div class="container">
         <div class="wrapper">
-
           <div class="calculation__container">
             <!-- инфа о блоке -->
             <div class="calculation_content">
               <div class="calculation_image"></div>
               <h2 class="subtitle subtitle_black">Получите расчёт стоимости подключения газа</h2>
-              <p class="calculation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                nemo
-                cupiditate cumque quibusdam harum nulla non esse velit, sit natus blanditiis molestiae fugit
-                dignissimos
-                tenetur animi vero id nisi ipsam reprehenderit. Iste dolorum esse dicta.</p>
+              <p class="calculation__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium nemo cupiditate cumque quibusdam harum nulla non esse velit,
+                sit natus blanditiis molestiae fugit dignissimos tenetur animi vero id nisi ipsam reprehenderit.
+                Iste dolorum esse dicta.
+              </p>
             </div>
             <!-- поля ввода и кнопка обратной связи -->
             <div class="calculation__inputs">
@@ -124,12 +129,11 @@
               <input class="input" type="text" name="" placeholder="Давление газопровода" id="">
               <input class="input" type="text" name="" placeholder="Имя" id="">
               <input class="input" type="text" name="" placeholder="E-mail" id="">
-
+              <!-- соглашение с ППД -->
               <div>
-                <!-- соглашение с ППД -->
                 <input class="checkbox" type="checkbox" name="" id="">
-                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni at cupiditate
-                  facere.
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni at cupiditate facere.
                   Obcaecati quia, eligendi, explicabo facere quaerat illum est soluta quam et tenetur iusto aliquam
                   magnam,
                   voluptates quos quisquam!
@@ -140,7 +144,6 @@
               <button class="btn btn__green">Отправить</button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -149,13 +152,11 @@
     <div id="services" class="services">
       <div class="container">
         <div class="wrapper">
-
           <div class="services__container">
             <!-- Заголовок блока -->
             <h2 class="subtitle subtitle_white">Услуги и Цены</h2>
-
+            <!-- Тарифы -->
             <div class="services__items">
-              <!-- Тарифы -->
               <div class="services__item">
                 <!-- Заголовок тарифа -->
                 <h3 class="services__title">Проектирование</h3>
@@ -177,12 +178,14 @@
                 <h3 class="services__title">Строительство</h3>
                 <!-- Описание тарифа -->
                 <ul class="services__description">
-                  <li class="services__description-item">описание (элемент)</li>
-                  <li class="services__description-item">описание (элемент)</li>
-                  <li class="services__description-item">описание (элемент)</li>
-                  <li class="services__description-item">описание (элемент)</li>
-                  <li class="services__description-item">описание (элемент)</li>
-                  <li class="services__description-item">описание (элемент)</li>
+                  <li class="services__description-item">Получение необходимых разрешений</li>
+                  <li class="services__description-item">Организация строительной площадки</li>
+                  <li class="services__description-item">Закупка, доставка оборудования и материалов</li>
+                  <li class="services__description-item">Строительно монтажные работы наружного/подземного газопровода
+                  </li>
+                  <li class="services__description-item">Строительно-монтажные работы внутреннего газопровода</li>
+                  <li class="services__description-item">Разработка и согласование исполнительно-технической
+                    документации</li>
                 </ul>
                 <div class="services__price">от 100 000</div>
                 <!-- кнопка "Заказать услугу" -->
@@ -195,9 +198,12 @@
                 <!-- Описание тарифа -->
                 <ul class="services__description">
                   <li class="services__description-item">Приёмка строительных материалов</li>
-                  <li class="services__description-item">Выявление нарушений в хранении и складировании строительных материалов</li>
-                  <li class="services__description-item">Контроль сроков выполнения работ, согласно календарному плану</li>
-                  <li class="services__description-item">Проверка наличия необходимых сертификатов и документов на строительные материалы</li>
+                  <li class="services__description-item">Выявление нарушений в хранении и складировании строительных
+                    материалов</li>
+                  <li class="services__description-item">Контроль сроков выполнения работ, согласно календарному плану
+                  </li>
+                  <li class="services__description-item">Проверка наличия необходимых сертификатов и документов на
+                    строительные материалы</li>
                 </ul>
                 <div class="services__price">от 10 000</div>
                 <!-- кнопка "Заказать услугу" -->
@@ -205,7 +211,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -214,7 +219,6 @@
     <div id="steps" class="steps">
       <div class="container">
         <div class="wrapper">
-
           <div class="steps__container">
             <!-- Заголовок блока -->
             <h2 class="subtitle subtitle_black">Этапы и порядок газификации частного дома в московской области</h2>
@@ -224,35 +228,43 @@
                 <div class="steps__order">1</div>
                 <div class="steps__about">
                   <h4 class="steps__subtitle">Получаем договоры о подключении с техническими условиями </h4>
-                  <p class="steps__description">Вначале мы формируем пакет документов для получения ТУ и подаем
-                    заявление на получение технических условий в газораспределительную организацию. Получаем ТУ и
-                    заключаем договоры технологического присоединения с ГРО.</p>
+                  <p class="steps__description">
+                    Вначале мы формируем пакет документов для получения ТУ и подаем заявление
+                    на получение технических условий в газораспределительную организацию.
+                    Получаем ТУ и заключаем договоры технологического присоединения с ГРО.
+                  </p>
                 </div>
               </div>
               <div class="steps__item">
                 <div class="steps__order">2</div>
                 <div class="steps__about">
                   <h4 class="steps__subtitle">Проектируем согласовываем <br>и регистрируем проект</h4>
-                  <p class="steps__description">Затем выполняем проектные работы - от точки подключения до
-                    газоиспользующего оборудования. Согласуем проект газификации со всеми заинтересованными
-                    организациями.</p>
+                  <p class="steps__description">
+                    Затем выполняем проектные работы - от точки подключения до газоиспользующего оборудования.
+                    Согласуем проект газификации со всеми заинтересованными организациями.
+                  </p>
                 </div>
               </div>
               <div class="steps__item">
                 <div class="steps__order">3</div>
                 <div class="steps__about">
-                  <h4 class="steps__subtitle">Осуществляем расчет по проекту и выполняем все строительно-монтажные
-                    работы</h4>
-                  <p class="steps__description">Далее проводим работы по монтажу газопровода включая земляные работы и
-                    монтаж технооборудования</p>
+                  <h4 class="steps__subtitle">
+                    Осуществляем расчет по проекту и выполняем все строительно-монтажные
+                    работы
+                  </h4>
+                  <p class="steps__description">
+                    Далее проводим работы по монтажу газопровода включая земляные работы и монтаж технооборудования
+                  </p>
                 </div>
               </div>
               <div class="steps__item">
                 <div class="steps__order">4</div>
                 <div class="steps__about">
                   <h4 class="steps__subtitle">Сдаём построенный газопровод <br> в эксплуатацию</h4>
-                  <p class="steps__description">Собираем исполнительно-техническую документацию. Составляем акты
-                    технической приёмки работ, а также документы на газоиспользующее и технологическое обрудование.
+                  <p class="steps__description">
+                    Собираем исполнительно-техническую документацию.
+                    Составляем акты технической приёмки работ, а также документы на газоиспользующее и технологическое
+                    обрудование.
                   </p>
                 </div>
               </div>
@@ -260,25 +272,27 @@
                 <div class="steps__order">5</div>
                 <div class="steps__about">
                   <h4 class="steps__subtitle">Получаем договоры на ТО ВДГО <br>и договоры на поставку газа</h4>
-                  <p class="steps__description">Заключаем договоры на техническое обслуживание, поставку газа и
-                    пуско-наладочные работы. Договоры заключаются с филиалом АО "Мособлгаз" при направлении
-                    соответсвующего заявления с необходимым пакетом документов</p>
+                  <p class="steps__description">
+                    Заключаем договоры на техническое обслуживание, поставку газа и пуско-наладочные работы.
+                    Договоры заключаются с филиалом АО "Мособлгаз" при направлении соответсвующего заявления
+                    с необходимым пакетом документов
+                  </p>
                 </div>
               </div>
               <div class="steps__item">
                 <div class="steps__order">6</div>
                 <div class="steps__about">
                   <h4 class="steps__subtitle">Сопровождаем объект <br>до врезки пуска газа</h4>
-                  <p class="steps__description">Назначаем даты врезки и пуска газа.При пуске газа обязательно должен
-                    присутствовать абонет, поэтому заранее оговариваются дата и время, когда газовики смогут прибытьи
+                  <p class="steps__description">
+                    Назначаем даты врезки и пуска газа.
+                    При пуске газа обязательно должен присутствовать абонет,
+                    поэтому заранее оговариваются дата и время, когда газовики смогут прибыть и
                     выполнить мероприятия по фактическому присоединению
-
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -297,7 +311,7 @@
             <a href="#"><img class="logo" src="img/logos/logo_DKProfi_black.svg" alt="logo"></a>
 
             <!-- меню сайта -->
-            <ul class="menu menu__footer">
+            <ul class="menu__footer">
               <li class="menu__item"><a href="#">О компании</a></li>
               <li class="menu__item"><a href="#">Услуги и цены</a></li>
               <li class="menu__item"><a href="#">Галерея работ</a></li>
@@ -311,16 +325,31 @@
           <div class="footer__bottom">
 
             <!-- all rights reserved -->
-            <div class="copyright">2023 All Rights Reserved</div>
+            <div class="copyright">©️ 2023 All Rights Reserved</div>
 
             <!-- меню сайта -->
             <ul class="contacts">
-              <li class="contacts__item"><a href="#"><strong>Телефон:</strong><br>+79370086526</a></li>
-              <li class="contacts__item"><a href="#"><strong>Почта:</strong><br>mail@hmail.com</a></li>
-              <li class="contacts__item"><a href="#"><strong>Режим работы:</strong><br>Пн-Пт. 09:00-18:00</a></li>
-              <li class="contacts__item"><a href="#">БЦ Марьина Роща, 17-й проезд<br>Марьиной Рощи, 4к1</a></li>
+              <li class="contacts__item">
+                <a href="tel:+79370086526">
+                  <span>Телефон:</span>
+                  <p>+79370086526</p>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:mail@gmail.com">
+                  <span>Почта:</span>
+                  <p>mail@gmail.com</p>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span>Режим работы:</span>
+                <p>Пн-Пт. 09:00-18:00</p>
+              </li>
+              <li class="contacts__item">
+                <p>БЦ Марьина Роща, 17-й проезд Марьиной Рощи, 4к1
+                </p>
+              </li>
             </ul>
-
           </div>
         </div>
 

@@ -10,21 +10,21 @@ html {
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 8px 0 8px;
+  padding: 0 24px 0 24px;
   max-width: 1465px;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .wrapper {
-    padding: 0 12px 0 12px;
+    padding: 0 24px 0 24px;
   }
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .wrapper {
-    padding: 0 4px 0 4px;
+    padding: 0 12px 0 12px;
   }
 }
 
@@ -181,3 +181,4 @@ h4 {
 .subtitle_white {
   color: var(--text-first-color);
 }
+

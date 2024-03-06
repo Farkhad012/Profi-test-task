@@ -16,10 +16,8 @@
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   .calculation__container {
-    /* width: 80%; */
     flex-direction: column;
-    padding: 20px 0 30px 0;
-
+    padding: 100px 0 100px;
   }
 }
 
