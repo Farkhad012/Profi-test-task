@@ -6,6 +6,7 @@
   justify-content: space-between;
   height: 105px;
   position: relative;
+
 }
 
 /* стили для планшетов */
@@ -60,7 +61,7 @@
     position: absolute;
     top: -1000px;
     left: 0;
-    height: 50vh;
+    height: 100vh;
     text-align: right;
     opacity: 90%;
     width: 100%;
@@ -102,7 +103,7 @@
 .burger__menu-icon span {
   position: absolute;
   height: 4px;
-  width: 24px;
+  width: 30px;
   background: var(--btn-secondary-color);
   border-radius: 50px;
   z-index: 99;
@@ -122,6 +123,8 @@
 
 .header__menu.open .burger__menu-icon span:nth-child(1) {
   transform: translateY(0px) rotate(-45deg);
+  background: var(--text-first-color);
+
 }
 
 .header__menu.open .burger__menu-icon span:nth-child(2) {
@@ -130,4 +133,5 @@
 
 .header__menu.open .burger__menu-icon span:nth-child(3) {
   transform: translateY(0px) rotate(45deg);
+  background: var(--text-first-color);
 }

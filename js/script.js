@@ -5,14 +5,21 @@ let menuItem = document.querySelectorAll(".menu__item");
 
 burgerMenuIcon.addEventListener("click", function (e) {
   headerMenu.classList.toggle("open");
-  // headerNavList.classList.toggle("opened");
 
-  // e.stopPropagation(); // Остановка всплытия события, чтобы не срабатывал document.click
+  e.stopPropagation(); // Остановка всплытия события, чтобы не срабатывал document.click
   // document.body.style.overflowY = 'hidden';
 });
 
+// Добавляем обработчик события для каждого элемента .menu__item
+menuItem.forEach(function(item) {
+  item.addEventListener("click", function() {
+    headerMenu.classList.remove("open");
+  });
+});
+
 document.addEventListener("click", function (e) {
-  if (!burgerMenuIcon.contains(e.target) && headerMenu.contains(e.target) && !menuItem.contains(e.target)) {
+  if (!burgerMenuIcon.contains(e.target) && !headerMenu.contains(e.target)) {
     headerMenu.classList.remove("open");
   }
 });
+

@@ -48,13 +48,12 @@ html {
   .btn {
     padding: 20px 60px;
     font-size: 16px;
-
   }
 }
 
 .btn__black {
   background-color: var(--btn-secondary-color);
-  color: white;
+  color: var(--text-first-color);
 }
 
 .btn__green {
@@ -71,7 +70,6 @@ html {
   background-color: var(--btn-secondary-color);
   /* color: var(--main-background_color); */
 }
-
 
 /* ИНПУТЫ */
 
