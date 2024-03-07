@@ -124,23 +124,22 @@
             <!-- поля ввода и кнопка обратной связи -->
             <div class="calculation__inputs">
               <!-- поля ввода -->
-              <input class="input" type="text" name="" placeholder="Район подключения газа" id="">
-              <input class="input" type="text" name="" placeholder="Отапливаемая площадь" id="">
-              <input class="input" type="text" name="" placeholder="Место врезки в газопровод" id="">
-              <input class="input" type="text" name="" placeholder="Давление газопровода" id="">
-              <input class="input" type="text" name="" placeholder="Имя" id="">
-              <input class="input" type="text" name="" placeholder="E-mail" id="">
+              <input class="input" type="text" name="area" placeholder="Район подключения газа" id="">
+              <input class="input" type="text" name="heatedArea" placeholder="Отапливаемая площадь" id="">
+              <input class="input" type="text" name="pointOfConnection" placeholder="Место врезки в газопровод" id="">
+              <input class="input" type="text" name="gasLinePressure" placeholder="Давление газопровода" id="">
+              <input class="input" type="text" name="name" placeholder="Имя" id="">
+              <input class="input" type="email" name="" placeholder="E-mail" id="">
               <!-- соглашение с ППД -->
-              <div>
-                <input class="checkbox" type="checkbox" name="" id="">
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni at cupiditate facere.
-                  Obcaecati quia, eligendi, explicabo facere quaerat illum est soluta quam et tenetur iusto aliquam
-                  magnam,
-                  voluptates quos quisquam!
-                </p>
-              </div>
 
+              <input type="checkbox" class="custom-checkbox" id="myCheckbox" value="yes">
+              <label class="checkbox-label" for="myCheckbox">
+                <a href="#">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni at cupiditate facere. Obcaecati quia, eligendi, explicabo facere quaerat
+                  illum est soluta quam et tenetur iusto aliqu ammagnam, voluptates quos quisquam!
+                </a>
+              </label>
               <!-- кнопка "Отправить" -->
               <button class="btn btn__green">Отправить</button>
             </div>
@@ -313,10 +312,10 @@
 
             <!-- меню сайта -->
             <ul class="menu__footer">
-              <li class="menu__item"><a href="#">О компании</a></li>
-              <li class="menu__item"><a href="#">Услуги и цены</a></li>
+              <li class="menu__item"><a href="#about">О компании</a></li>
+              <li class="menu__item"><a href="#services">Услуги и цены</a></li>
               <li class="menu__item"><a href="#">Галерея работ</a></li>
-              <li class="menu__item"><a href="#">Калькулятор</a></li>
+              <li class="menu__item"><a href="#calculation">Калькулятор</a></li>
               <li class="menu__item"><a href="#">Контакты</a></li>
               <li class="menu__item"><a href="#">Политика конфиденциальности</a></li>
             </ul>

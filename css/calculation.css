@@ -64,7 +64,7 @@
   gap: 16px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
   width: 100%;
   height: 70px;
   border-radius: 10px;
@@ -74,21 +74,63 @@ input[type="text"] {
   /* background-color: rgb(168, 173, 157); */
 }
 
-
-input[type="checkbox"] {
-  height: 30px;
-  width: 50px;
-}
-
-.checkbox {
-  width: 30px;
-}
-
-.description {
-  font-size: 12px;
-  line-height: 1.3;
-}
-
 .calculation__inputs button {
   width: 100%;
+}
+
+.custom-checkbox {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: flex-start;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #000000;
+  border-radius: 0.25em;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170%;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: var(--btn-thirst-color);
+  background-color: var(--btn-color);
+  background-image: url(../img/vectors/checkbox.svg);
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: var(--btn-color-three);
+  background-color: var(--btn-color);
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  border-color: var(--btn-color-three);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: var(--btn-color);
+}
+
+/* Стилизуем метку (текст рядом с чекбоксом) */
+.checkbox-label {
+  font-size: 12px;
+  line-height: 1.3;
 }

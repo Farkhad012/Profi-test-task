@@ -7,10 +7,9 @@ burgerMenuIcon.addEventListener("click", function (e) {
   headerMenu.classList.toggle("open");
 
   e.stopPropagation(); // Остановка всплытия события, чтобы не срабатывал document.click
-  // document.body.style.overflowY = 'hidden';
 });
 
-// Добавляем обработчик события для каждого элемента .menu__item
+// Обработчик события для каждого элемента .menu__item
 menuItem.forEach(function(item) {
   item.addEventListener("click", function() {
     headerMenu.classList.remove("open");

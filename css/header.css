@@ -124,7 +124,6 @@
 .header__menu.open .burger__menu-icon span:nth-child(1) {
   transform: translateY(0px) rotate(-45deg);
   background: var(--text-first-color);
-
 }
 
 .header__menu.open .burger__menu-icon span:nth-child(2) {
