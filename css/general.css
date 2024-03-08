@@ -86,12 +86,20 @@ input:focus {
 
 ::placeholder {
   color: var(--text-secondary-color);
+<<<<<<< HEAD
   opacity: 1;
 }
 
 ::-ms-input-placeholder {
   color: var(--text-secondary-color);
   opacity: 1;
+=======
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: var(--text-secondary-color)
+>>>>>>> d3c40ae14103a1dbbce9e8b8370c32f5b6a3c863
 }
 
 /* ЗАГОЛОВКИ И ПОДЗАГОЛОВКИ*/
