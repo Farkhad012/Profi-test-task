@@ -66,6 +66,13 @@ html {
   color: var(--btn-secondary-color);
 }
 
+@media (hover: none) {
+  button:active {
+    background-color: var(--main-background_color);
+    color: var(--btn-secondary-color);
+  }
+}
+
 .btn__green:hover {
   background-color: var(--btn-secondary-color);
   /* color: var(--main-background_color); */
@@ -75,6 +82,16 @@ html {
 
 input:focus {
   border: 1px solid rgb(188, 188, 188);
+}
+
+::placeholder {
+  color: var(--text-secondary-color);
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: var(--text-secondary-color);
+  opacity: 1;
 }
 
 /* ЗАГОЛОВКИ И ПОДЗАГОЛОВКИ*/
@@ -96,6 +113,7 @@ h1 {
     width: 700px;
   }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   h1 {
@@ -134,7 +152,7 @@ h3 {
   background-color: var(--btn-color);
   padding: 24px 24px;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -1.5px;
   color: var(--text-first-color);
@@ -147,6 +165,7 @@ h3 {
     font-size: 20px;
   }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   h3 {
@@ -167,6 +186,7 @@ h4 {
     font-size: 24px;
   }
 }
+
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   h4 {
@@ -177,4 +197,3 @@ h4 {
 .subtitle_white {
   color: var(--text-first-color);
 }
-

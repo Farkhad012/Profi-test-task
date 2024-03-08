@@ -91,7 +91,7 @@
 
 
 .services__item {
-  min-width: 440px;
+  min-width: calc(33% - 20px);
   display: flex;
   gap: 40px;
   scroll-snap-align: start;
@@ -107,7 +107,7 @@
 @media screen and (max-width: 1200px) {
   .services__item {
     min-height: 100%;
-    min-width: 320px;
+    /* min-width: 320px; */
     gap: 24px;
     padding: 20px;
   }
@@ -123,7 +123,7 @@
 @media screen and (max-width: 768px) {
   .services__item {
     padding: 20px;
-    width: 320px;
+    width: 100%;
     gap: 30px;
   }
   .services__item:first-child {
@@ -137,12 +137,13 @@
 .services__title {
   display: inline-block;
   width: 100%;
+  white-space: wrap;
 }
 
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .services__title {
-    width: 272px;
+    width: 100%;
   }
 }
 
