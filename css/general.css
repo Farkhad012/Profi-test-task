@@ -18,6 +18,7 @@ html {
 @media screen and (max-width: 1200px) {
   .wrapper {
     padding: 0 24px 0 24px;
+    max-width: 100%;
   }
 }
 
@@ -86,20 +87,16 @@ input:focus {
 
 ::placeholder {
   color: var(--text-secondary-color);
-<<<<<<< HEAD
   opacity: 1;
 }
 
 ::-ms-input-placeholder {
   color: var(--text-secondary-color);
   opacity: 1;
-=======
-  opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
   color: var(--text-secondary-color)
->>>>>>> d3c40ae14103a1dbbce9e8b8370c32f5b6a3c863
 }
 
 /* ЗАГОЛОВКИ И ПОДЗАГОЛОВКИ*/
@@ -157,7 +154,7 @@ h2 {
 
 h3 {
   width: 100%;
-  background-color: var(--btn-color);
+  background-color: var(--btn-color-three);
   padding: 24px 24px;
   border-radius: 10px;
   font-size: 20px;
@@ -170,7 +167,7 @@ h3 {
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
   h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
