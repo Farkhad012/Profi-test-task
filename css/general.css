@@ -86,12 +86,7 @@ input:focus {
 }
 
 ::placeholder {
-  color: var(--text-secondary-color);
-  opacity: 1;
-}
-
-::-ms-input-placeholder {
-  color: var(--text-secondary-color);
+  font-weight: 300;
   opacity: 1;
 }
 
@@ -115,20 +110,20 @@ h1 {
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 44px;
-    width: 700px;
+    max-width: 700px;
   }
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 44px;
     color: var(--btn-secondary-color);
-    width: 700px;
+    max-width: 700px;
   }
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 32px;
@@ -145,7 +140,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 24px;
@@ -171,7 +166,7 @@ h3 {
   }
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   h3 {
     font-size: 18px;
@@ -192,7 +187,7 @@ h4 {
   }
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   h4 {
     font-size: 20px;

@@ -134,13 +134,13 @@
   }
 }
 
-.services__item:nth-child(1) h3, li::before{
+.services__item:nth-child(1) h3{
   background-color: var(--btn-color);
 }
-.services__item:nth-child(2) h3, li::before{
+.services__item:nth-child(2) h3{
   background-color: var(--btn-color-two);
 }
-.services__item:nth-child(3) h3, li::before{
+.services__item:nth-child(3) h3{
   background-color: var(--btn-color-three);
 }
 
@@ -221,12 +221,14 @@
 }
 
 .services__item:nth-child(1) li::before {  
-  background-color: var(--btn-color)
-};
+  background-color: var(--btn-color);
+}
+
 .services__item:nth-child(2) li::before {  
-  background-color: var(--btn-color-two)
-};
+  background-color: var(--btn-color-two);
+}
+
 .services__item:nth-child(3) li::before {  
-  background-color: var(--btn-color-three)
-};
+  background-color: var(--btn-color-three);
+}
 
