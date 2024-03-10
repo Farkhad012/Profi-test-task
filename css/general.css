@@ -41,7 +41,11 @@ html {
   border-radius: 12px;
   font-weight: 700;
   font-size: 24px;
-  transition: 0.3s;
+  transition: all .3s ease-out;
+}
+
+button:active {
+  filter: brightness(60%);
 }
 
 /* стили для планшетов */
@@ -54,7 +58,10 @@ html {
 
 .btn__black {
   background-color: var(--btn-secondary-color);
-  color: var(--text-first-color);
+  color: var(--main-text-color);
+
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .btn__green {
@@ -63,6 +70,10 @@ html {
 }
 
 .btn__black:hover {
+  background-color: var(--main-background_color);
+  color: var(--btn-secondary-color);
+}
+.btn__black:active {
   background-color: var(--main-background_color);
   color: var(--btn-secondary-color);
 }
@@ -91,7 +102,7 @@ input:focus {
 }
 
 ::-ms-input-placeholder { /* Edge 12 -18 */
-  color: var(--text-secondary-color)
+  color: var(--secondary-text-color)
 }
 
 /* ЗАГОЛОВКИ И ПОДЗАГОЛОВКИ*/
@@ -102,9 +113,15 @@ h1 {
   letter-spacing: -0.5px;
   line-height: 1.2;
   width: 1000px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   text-transform: uppercase;
+  position: relative;
+  left: -1000px;
+  opacity: 0;
+  transition: all 0.8s ease;
 }
+
+
 
 /* стили для планшетов */
 @media screen and (max-width: 1200px) {
@@ -136,7 +153,7 @@ h2 {
   font-weight: 800;
   letter-spacing: -2px;
   line-height: 1.2;
-  color: var(--text-secondary-color);
+  color: var(--secondary-text-color);
   text-transform: uppercase;
 }
 
@@ -155,7 +172,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -1.5px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   white-space: nowrap;
 }
 
@@ -195,5 +212,5 @@ h4 {
 }
 
 .subtitle_white {
-  color: var(--text-first-color);
+  color: var(--main-text-color);
 }

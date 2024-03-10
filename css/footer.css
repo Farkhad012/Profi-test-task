@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
 }
 
 /* стили для планшетов */
@@ -50,7 +50,7 @@
   }
 }
 
-/* стили для планшетов */
+/* стили для мобильной */
 @media screen and (max-width: 768px) {
   .menu__footer {
     display: flex;
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   padding: 0 10px 0;
 }
 

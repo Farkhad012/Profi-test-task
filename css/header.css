@@ -40,6 +40,9 @@
   gap: 36px;
   font-family: Montserrat;
   font-weight: 700;
+
+  opacity: 0;
+  transition: all 2s cubic-bezier(1,-1.8,0,-0.02);
 }
 
 .menu__header li:hover {
@@ -57,9 +60,9 @@
 /* стили для планшетов */
 @media screen and (max-width: 768px) {
   .menu__header {
-    /* display: none; */
+    display: none;
     position: absolute;
-    top: -1000px;
+    top: -100vh;
     left: 0;
     height: 100vh;
     text-align: right;
@@ -70,8 +73,10 @@
     padding: 100px 30px;
     gap: 50px;
     background-color: var(--btn-color);
-    color: var(--text-first-color);
+    color: var(--main-text-color);
     z-index: 99;
+    transition: top 0.5s ease-in-out;
+
   }
 
   .menu li:hover {
@@ -79,9 +84,9 @@
   }
 
   .header__menu.open .menu__header {
+    display: flex;
     width: 100%;
-    top: 0;
-    transition: all 0.5s ease-in-out;
+    top: 0px;
   }
 }
 
@@ -89,9 +94,11 @@
   display: none;
   position: relative;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  /* background-color: rgba(242, 190, 34, 0.1); */
+  width: 40px;
+  height: 40px;
+
+  padding: 20px;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -103,27 +110,27 @@
 .burger__menu-icon span {
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 40px;
   background: var(--btn-secondary-color);
   border-radius: 50px;
   z-index: 99;
   right: 4px;
-  top: 13px;
+  top: 20px;
   transition: transform .5s, opacity .5s;
 }
 
 
 .burger__menu-icon span:nth-child(1) {
-  transform: translateY(-10px);
+  transform: translateY(-13px);
 }
 
 .burger__menu-icon span:nth-child(3) {
-  transform: translateY(10px);
+  transform: translateY(13px);
 }
 
 .header__menu.open .burger__menu-icon span:nth-child(1) {
   transform: translateY(0px) rotate(-45deg);
-  background: var(--text-first-color);
+  background: var(--main-text-color);
 }
 
 .header__menu.open .burger__menu-icon span:nth-child(2) {
@@ -132,5 +139,5 @@
 
 .header__menu.open .burger__menu-icon span:nth-child(3) {
   transform: translateY(0px) rotate(45deg);
-  background: var(--text-first-color);
+  background: var(--main-text-color);
 }

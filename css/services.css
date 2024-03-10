@@ -64,13 +64,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  /* Для Firefox */
-  -ms-overflow-style: none;
-  /* Для Internet Explorer и Edge */
+  gap: 24px;  
 }
 
 /* стили для планшетов */
@@ -91,10 +85,9 @@
 
 
 .services__item {
-  min-width: calc(33% - 20px);
+  min-width: calc(33% - 30px);
   display: flex;
   gap: 40px;
-  scroll-snap-align: start;
   flex-direction: column;
   justify-content: space-between;
   padding: 40px;
@@ -107,7 +100,6 @@
 @media screen and (max-width: 1200px) {
   .services__item {
     min-height: 610px;
-    /* min-width: 320px; */
     gap: 24px;
     padding: 20px;
   }
@@ -172,13 +164,13 @@
 
 .services__price {
   width: 100%;
-  background-color: var(--text-first-color);
+  background-color: var(--main-text-color);
   padding: 24px 24px;
   border-radius: 10px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -1.5px;
-  color: var(--text-secondary-color);
+  color: var(--secondary-text-color);
   justify-self: flex-end;
 }
 
@@ -190,7 +182,7 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -1.5px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   display: flex;
   justify-content: start;
 }

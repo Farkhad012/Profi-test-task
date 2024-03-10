@@ -43,7 +43,7 @@
   font-size: 24px;
   font-weight: 500;
   letter-spacing: -1.3px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -59,7 +59,12 @@
   font-size: 26px;
   font-weight: 500;
   letter-spacing: -1.3px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
+
+  position: relative;
+  opacity: 0;
+  left: 1000px;
+  transition: all 0.8s ease;
 }
 
 .about__steps-item::before {
@@ -75,7 +80,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  color: var(--text-first-color);
+  color: var(--main-text-color);
   margin-right: 20px;
 }
 

@@ -45,6 +45,13 @@
   border-radius: 10px;
 }
 
+/* стили для планшетов */
+@media screen and (max-width: 1200px) {
+  .calculation_image {
+    height: 270px;
+  }
+}
+
 .calculation_content p {
   margin-top: -10px;
   line-height: 1.7;
