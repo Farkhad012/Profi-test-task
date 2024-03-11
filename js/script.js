@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animateElement(btnBlack, 'opacity', '1');
 
-    animateElement(menuHeader, 'opacity', '1');
+    // animateElement(menuHeader, 'opacity', '1');
     
   }, 500);
 

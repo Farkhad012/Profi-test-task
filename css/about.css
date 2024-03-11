@@ -64,7 +64,7 @@
   position: relative;
   opacity: 0;
   left: 1000px;
-  transition: all 0.8s ease;
+  transition: left 0.8s ease;
 }
 
 .about__steps-item::before {
